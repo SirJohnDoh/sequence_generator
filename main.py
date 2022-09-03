@@ -4,11 +4,11 @@ import argparse
 
 from generator import Generator
 
-from fibinacci import Fibinacci
+from fibonacci import Fibonacci
 
 
 def main():
-    fib = Fibinacci()
+    fib = Fibonacci()
     parser = argparse.ArgumentParser(
         description=(
             'Find method of representing a number given sums of numbers from a sequnce.'
