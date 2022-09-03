@@ -20,7 +20,7 @@ def main():
         help='Integer to represent or maximum value of multiple representations'
     )
     parser.add_argument(
-        '--sequence_list',
+        '--sequence-list',
         dest='function',
         action='store_const',
         help='Find representation of every number up till the given integer',

@@ -39,7 +39,7 @@ class Generator:
             if remaining_sum < 0:
                 raise Exception(f'Can not represent {num}')
 
-        return f'{num}=' + '+'.join([str(self.number(i)) for i in sorted(index_used)]), index_used
+        return f'{num}=' + '+'.join([str(self.number(i)) for i in sorted(index_used)]), sorted(index_used)
 
     def get_every_sum_solution_up_to(self, num: int) -> List[Tuple[Set[int], str]]:
         return [
