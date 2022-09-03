@@ -1,5 +1,6 @@
 from generator import Generator
-class Fibinacci(Generator):
+
+class Fibonacci(Generator):
     results = { 0:0, 1:1 }
 
     def number(self, n: int):
