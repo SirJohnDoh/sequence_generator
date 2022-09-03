@@ -29,8 +29,14 @@ def main():
         const=fib.get_every_sum_solution_up_to,
         default=fib.get_sum_solution_for,
     )
+    parser.add_argument(
+        '--quiet',
+        action='store_true',
+    )
     args = parser.parse_args()
     solution = args.function(args.integer)
+    if args.quiet:
+        return
     if isinstance(solution, list):
         for sol in solution:
             print(sol[0])
