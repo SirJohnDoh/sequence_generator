@@ -1,11 +1,12 @@
 from typing import Set, Tuple, List
 
+
 class Generator:
 
     def number(self, n: int):
         raise NotImplementedError()
 
-    def get_closest_index_for(self, num: int, index_used: Set[int]=set()) -> Tuple[int,int,bool]:
+    def get_closest_index_for(self, num: int, index_used: Set[int] = set()) -> Tuple[int, int, bool]:
         if num < 0:
             raise ValueError('Negative numbers not supported')
         i = -1

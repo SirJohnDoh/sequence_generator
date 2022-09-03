@@ -1,7 +1,10 @@
 from generator import Generator
 
+
 class Fibonacci(Generator):
-    results = { 0:0, 1:1 }
+    results = {
+        0: 0, 1: 1
+    }
 
     def number(self, n: int):
         if n not in self.results:
